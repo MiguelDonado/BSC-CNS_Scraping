@@ -34,14 +34,22 @@
     rest of code...
     ```
 ### Troubleshooting
-1. I got an error when using regex. When searching for a regex expression on my text, I got None. So it looked like my regex expression wasn't correct. But I tried it with a sample and it worked. After a while I realize that the problem was that not all jobs had a section of *Additional Knowledge...". The solution was to modify my regex and some lines of code in the program to handle that case. 
+1. **Regex error**:
+   + I got `None` when searching with one of my regex expressions 
+   ```py
+   regex.search(regex_expression, text)
+   ``` 
+   1. I tried the regex with a sample string and it worked. 
+   2. After a while I realize that the problem was that not all jobs had a section of *Additional Knowledge...* 
+   3. **Solution**: Modify my regex and some lines of code in the program to handle that case. 
 
 ### Conclusions
-Taking into account that not all jobs offered by the BSC are closely related with my field (ML/AI, Data Science), to make it simpler, I would assume that the most frequent mentioned skills across **ALL jobs** (related and not so closely related) could be a relevant skill for my field/industry.
+Taking into account that not all jobs offered by the BSC are closely related with my field (ML/AI, Data Science), to make it simpler, **I would assume that the most frequent mentioned skills across ALL jobs** (related and not so closely related) **could be a relevant skill for my field/industry**.
 + On date June of 2025, the most relevant skills according BSC job offers are:
   
 ![ImportantThings](MostImportantThings.png)
-  
-+ Things I have already learned: Python, git, linux, unix, bash, tensorflow
+
+Among all this things I can differentiate between:
++ **Things I have already learned**: *Python, git, linux, unix, bash, tensorflow*
   + It feels good to corroborate that I have learnt things that are relevant according to one of the most prestigiuous supercomputer centers in Europe.
-+ Things I have not learned yet: hpc, svn, cloud, kubernetes, containerization, docker, parallelization...
++ **Things I have not learned yet**: *hpc, svn, cloud, kubernetes, containerization, docker, parallelization...*
