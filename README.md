@@ -12,7 +12,7 @@
 + Spacy (POS tagger)
 
 + **Source code**:
-  + `main.py`: Script
+  + `main.py`: Script that contains all the logic
   + `constants.py`: File that contains some regex expressions and a url. 
 ### Explanation of new things
 + **POG tagging**: Given a word, assign a tag.
