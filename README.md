@@ -14,6 +14,7 @@
 + **Source code**:
   + `main.py`: Script that contains all the logic
   + `constants.py`: File that contains some regex expressions and a url. 
++ The scraping has been done taking into account unigrams (word counts). N-grams has not been implemented, probably a combination of both (unigram and n-gram) could lead to better results.
 ### Explanation of new things
 + **POG tagging**: Given a word, assign a tag.
   + NOUN: common noun
