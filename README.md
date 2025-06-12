@@ -10,6 +10,10 @@
 + Selenium (scrape)
 + Regex (parse)
 + Spacy (POS tagger)
+
++ **Source code**:
+  + `main.py`: Script
+  + `constants.py`: File that contains some regex expressions and a url. 
 ### Explanation of new things
 + **POG tagging**: Given a word, assign a tag.
   + NOUN: common noun
