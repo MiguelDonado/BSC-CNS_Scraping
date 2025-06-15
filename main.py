@@ -46,7 +46,7 @@ class BSC(webdriver.Chrome):
             # Get education paragraph
             education = regex.search(const.EDUCATION_PATTERN, requirements)
             if education:
-                education = education.group(1) or ""
+                education = education.group(1) or "" or "/" or "+"
                 education = regex.sub(r"\n+", " ", education)
             else:
                 education = ""
@@ -57,7 +57,7 @@ class BSC(webdriver.Chrome):
             # Get essential knowledge paragraph
             essential = regex.search(const.ESSENTIAL_PATTERN, requirements)
             if essential:
-                essential = essential.group(2) or ""
+                essential = essential.group(2) or "" or "/" or "+"
                 essential = regex.sub(r"\n+", " ", essential)
             else:
                 essential = ""
@@ -68,7 +68,7 @@ class BSC(webdriver.Chrome):
             # Get additional knowledge
             additional = regex.search(const.ADDITIONAL_PATTERN, requirements)
             if additional:
-                additional = additional.group(2) or ""
+                additional = additional.group(2) or "" or "/" or "+"
                 additional = regex.sub(r"\n+", " ", additional)
             else:
                 additional = ""
